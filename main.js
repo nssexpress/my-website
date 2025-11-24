@@ -23,3 +23,22 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
+// Back to top functionality
+function scrollToTop(e) {
+  if (e) e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  // Fallback for older browsers
+  if (!window.scrollTo || !window.scrollTo.toString().includes("behavior")) {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
+}
+
+// Handle all back to top links
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+  link.addEventListener("click", scrollToTop);
+});
+
