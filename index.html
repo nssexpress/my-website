@@ -343,8 +343,8 @@
 
   <!-- ================= CONTACT ================= -->
   <section class="section" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-text">
+    <div class="container">
+      <div class="contact-text" style="max-width: 600px; margin: 0 auto; text-align: center;">
         <h2>Request a Quote or Contact Our Team</h2>
         <p>
           Share your lane details or general questions and we’ll respond as
@@ -356,93 +356,25 @@
             <i class="fa-solid fa-phone"></i>
             <div>
               <h4>Phone</h4>
-              <p><!-- Add your real phone here --> (XXX) XXX-XXXX</p>
+              <p><a href="tel:313-429-1616">313-429-1616</a></p>
             </div>
           </div>
           <div class="contact-item">
             <i class="fa-solid fa-envelope"></i>
             <div>
               <h4>Email</h4>
-              <p><!-- Add your real email here --> info@nssexpress.com</p>
+              <p><a href="mailto:safety@nssexpress.com">safety@nssexpress.com</a></p>
             </div>
           </div>
           <div class="contact-item">
             <i class="fa-solid fa-location-dot"></i>
             <div>
               <h4>Location</h4>
-              <p><!-- Add your real address here --> Based in the USA</p>
+              <p>5000 Wyoming Ave Suite 115<br>Dearborn, MI 48122</p>
             </div>
           </div>
         </div>
 
-        <p class="contact-note">
-          *This form is for general inquiries and load requests. For urgent or
-          time-critical loads, please call dispatch directly.
-        </p>
-      </div>
-
-      <div class="contact-form-card">
-        <h3>Send Us a Message</h3>
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="John Doe"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="ABC Logistics"
-              />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@example.com"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="(XXX) XXX-XXXX"
-              />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="lane">Lane / Details</label>
-            <textarea
-              id="lane"
-              name="lane"
-              rows="4"
-              placeholder="Example: Chicago, IL to Dallas, TX – 26 pallets – pickup Friday"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full">
-            Submit Request
-          </button>
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
-        </form>
       </div>
     </div>
   </section>
@@ -462,13 +394,10 @@
     </div>
     <div class="container footer-bottom">
       <span>© <span id="year"></span> NSS EXPRESS INC. All rights reserved.</span>
-      <span class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-      </span>
     </div>
   </footer>
 
   <!-- Main JS -->
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

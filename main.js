@@ -23,18 +23,3 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// Simple fake submit handler for contact form (front-end only)
-const contactForm = document.getElementById("contactForm");
-const formStatus = document.getElementById("formStatus");
-
-if (contactForm && formStatus) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    formStatus.textContent =
-      "Thank you! Your message has been received. We will contact you shortly.";
-    contactForm.reset();
-    setTimeout(() => {
-      formStatus.textContent = "";
-    }, 6000);
-  });
-}
